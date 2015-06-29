@@ -6,5 +6,5 @@ def random_number_generator
 end
 num = random_number_generator
 get '/' do
-  "The SECRET NUMBER is #{num}"
+  erb :index, :locals => {:num => num}
 end
