@@ -1,17 +1,20 @@
 <html>
 <head></head>
 <body>
-  <style>
-  body{
+<style>
+body{
   background: tan;
-  }
-  </style>
-  <p>
-    <form>
-      <input type='text' name='guess' />
-      <input type='submit' value='Guess!' />
-    </form>
-    <%= message %>
-  </p>
+}
+</style>
+<p>
+  Guess a number between 1 and 100
+</p>
+<form method="get">
+  <input type='text' name='guess' />
+  <input type='submit' value='Guess!' />
+</form>
+<p>
+  <%= message %>
+</p>
 </body>
 </html>

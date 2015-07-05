@@ -11,7 +11,9 @@ get '/' do
   message = check_guess(guess)
   erb :index, :locals => {:num => NUM, :message => message}
 end
+
 def check_guess(guess)
+  message = ""
   if guess.to_i > NUM
     message = "Too high!"
   elsif guess.to_i < NUM
